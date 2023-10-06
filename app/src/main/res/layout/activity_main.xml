@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1B4BB"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carmala Kidswear"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/Etuser"
+        android:layout_below="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_margin="25dp"
+        android:hint="username"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:background="#FDF0F0"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
+        />
+    <EditText
+        android:id="@+id/Etpass"
+        android:layout_below="@+id/Etuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_margin="25dp"
+        android:hint="password"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:background="#FDF0F0"
+        />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Etpass"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#132043"
+        android:text="Masuk"/>
+
+</RelativeLayout>
